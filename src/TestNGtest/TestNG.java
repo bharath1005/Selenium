@@ -1,5 +1,9 @@
 package TestNGtest;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -39,8 +43,8 @@ public class TestNG {
 	
 	@Test
 	public void test1() {
-		Assert.assertEquals("https://www.facebook.com/",driver.getCurrentUrl());
-		Assert.assertTrue(driver.getTitle().contains("Facebook"));
+		AssertJUnit.assertEquals("https://www.facebook.com/",driver.getCurrentUrl());
+		AssertJUnit.assertTrue(driver.getTitle().contains("Facebook"));
 		
 		WebElement txtuser = driver.findElement(By.id("email"));
 		txtuser.sendKeys("Bharath");
@@ -48,6 +52,7 @@ public class TestNG {
 		WebElement passtxt = driver.findElement(By.id("pass"));
 		passtxt.sendKeys("hello");
 	}
+	
 	
 	@AfterClass
 	public void afterClass() {
