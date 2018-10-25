@@ -5,6 +5,7 @@
     <classes>
       <class name="TestNGtest.Test1"/>
       <class name="TestNGtest.TestNG"/>
+      <class name="TestNGtest.Greens"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -49,13 +49,13 @@ public class Test2 {
     usertxt.sendKeys("bharatharuncse@gmail.com");
     Thread.sleep(1000);
     
-    WebElement passtxt = driver.findElement(By.xpath("(//input[@placeholder='Password'])[1]"));
-    passtxt.sendKeys("Tn54d3349");
+    WebElement passtxt = driver.findElement(By.className("js-password-field"));
+    passtxt.sendKeys("123456");
     Thread.sleep(1000);
-	
-   WebElement lgnbtn = driver.findElement(By.xpath("//button[@type='submit']"));
-   lgnbtn.click();
-   Thread.sleep(1000);
+    
+     WebElement lgnbtn = driver.findElement(By.xpath("//button[@type='submit']"));
+     lgnbtn.click();
+     Thread.sleep(1000);
 	
 	
 	}
@@ -66,11 +66,4 @@ public class Test2 {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-
 }

@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TwitterTestNG.Test2">
+      <class name="TestNGtest.Greens">
         <methods>
-          <include name="beforeclass"/>
+          <include name="test1"/>
           <include name="aftermethod"/>
           <include name="afterclass"/>
+          <include name="beforeclass"/>
           <include name="beforemethod"/>
-          <include name="test1"/>
         </methods>
-      </class> <!-- TwitterTestNG.Test2 -->
+      </class> <!-- TestNGtest.Greens -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
